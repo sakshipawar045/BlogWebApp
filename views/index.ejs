@@ -29,6 +29,8 @@
                     <li id="home"><a href="/">HOME</a></li>
                     <li id="about"><a href="/about">ABOUT US</a></li>
                     <li id="contact"><a href="/contact">CONTACT US</a></li>
+                    <li id="login"><a href="/login">Login</a></li>
+                    <li id="logout"><a href="/logout">Logout</a></li>
                 </ul>
             </div>
         </div>
@@ -60,7 +62,7 @@
                         <a href="/post/<%= post._id %>" class='btn-red btn-read-more'>Read More...</a>
     
                         <!-- Add Dynamic route to delete respective blog -->
-                        <a href="/post/delete/ADD_DYNAMIC_ROUTE_HERE...">
+                        <a href="/post/delete/<%= post._id %> ">
                             <button class="btn-delete"><i class="fas fa-trash-alt"></i></button>
                         </a>
                     </div>
